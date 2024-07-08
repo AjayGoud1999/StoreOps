@@ -12,20 +12,20 @@ Bootstrap - 5.3.3
 
 # Setup backend
 
-Install Dependencies: 
+### Install Dependencies: 
 
 npm install
 
-Run backend:
+### Run backend:
 
 npm run (or) node index.js
 
 # Setup frontend
 
-Install Dependencies: 
+#### Install Dependencies: 
 
 npm install
 
-Run frontend:
+### Run frontend:
 
 npm start
