@@ -1,0 +1,108 @@
+<style>
+  /* Base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Product card styles */
+  .wrapper {
+    max-width: 300px;
+    background-color: #f8f9fa; /* Light gray background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .price-label {
+    color: #888;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .gap-05 {
+    margin: 0 5px;
+  }
+
+  button {
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 1rem; 
+  }
+</style>
+
+<div class="column gap-1 wrapper">
+  <img [src]="product.image" alt="Product Thumbnail" />
+  <h2 class="title">{{ product.name | truncateName: 16 }}</h2>
+
+  <div class="row gap-05">
+    <span class="price-label">Price:</span>
+    <span class="price">{{ product.price | price }}</span>
+  </div>
+
+  <p-rating
+    [(ngModel)]="product.rating"
+    [readonly]="true"
+    iconCancelClass="hidden"
+  ></p-rating>
+
+  <div class="row gap-05">
+    <button
+      type="button"
+      pButton
+      icon="pi pi-pencil"
+      (click)="editProduct()"
+      label="Edit"
+    ></button>
+    <button
+      #deleteBtn
+      type="button"
+      pButton
+      icon="pi pi-trash"
+      (click)="confirmDelete()"
+      label="Delete"
+      class="p-button-danger"
+    ></button>
+  </div>
+</div>
+
+<p-confirmPopup></p-confirmPopup>

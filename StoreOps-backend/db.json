@@ -1,0 +1,116 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "image": "assets/images/products/image1.jpg",
+            "name": "Black Hoodie",
+            "price": "24",
+            "rating": 5
+        },
+        {
+            "id": 2,
+            "image": "assets/images/products/image2.jpg",
+            "name": "Branded Shoes",
+            "price": "13.5",
+            "rating": 4
+        },
+        {
+            "id": 3,
+            "image": "assets/images/products/image3.jpg",
+            "name": "White",
+            "price": "85.0",
+            "rating": 3
+        },
+        {
+            "id": 4,
+            "image": "assets/images/products/image4.jpg",
+            "name": "Gray Dress 1",
+            "price": "625",
+            "rating": 3
+        },
+        {
+            "id": 5,
+            "name": "Black T-Shirt (Mens)",
+            "image": "assets/images/products/image5.jpg",
+            "price": "55.0",
+            "rating": 5
+        },
+        {
+            "id": 6,
+            "name": "Jeans Jacket",
+            "image": "assets/images/products/image6.jpg",
+            "price": "115.0",
+            "rating": 4
+        },
+        {
+            "id": 7,
+            "name": "Black T-Shirt (Womens)",
+            "image": "assets/images/products/image7.jpg",
+            "price": "25.0",
+            "rating": 3
+        },
+        {
+            "id": 8,
+            "name": "Beige Trench Coat",
+            "image": "assets/images/products/image8.jpg",
+            "price": "52.0",
+            "rating": 1
+        },
+        {
+            "id": 9,
+            "name": "Stylish Shoes",
+            "image": "assets/images/products/image9.jpg",
+            "price": "32.0",
+            "rating": 2
+        },
+        {
+            "id": 10,
+            "name": "Stylish Shoes - B",
+            "image": "assets/images/products/image10.jpg",
+            "price": "55.0",
+            "rating": 5
+        },
+        {
+            "id": 11,
+            "name": "Beanie Black",
+            "image": "assets/images/products/image11.jpg",
+            "price": "15.0",
+            "rating": 1
+        },
+        {
+            "id": 12,
+            "name": "Beanie Orange",
+            "image": "assets/images/products/image12.jpg",
+            "price": "12.5",
+            "rating": 2
+        },
+        {
+            "id": 13,
+            "name": "Beanie Red",
+            "image": "assets/images/products/image13.jpg",
+            "price": "14.5",
+            "rating": 4
+        },
+        {
+            "id": 15,
+            "name": "Cyan Long Sleeve Shirt",
+            "image": "assets/images/products/image15.jpg",
+            "price": "15.5",
+            "rating": 5
+        },
+        {
+            "id": 16,
+            "name": "Yellow Raincoat",
+            "image": "assets/images/products/image16.jpg",
+            "price": "12.5",
+            "rating": 3
+        },
+        {
+            "id": 17,
+            "image": "data:image/jpeg;base64,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",
+            "name": "Bottle",
+            "price": 20,
+            "rating": 4
+        }
+    ]
+}

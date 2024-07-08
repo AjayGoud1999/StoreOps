@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Navbar with Angular Router</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa; /* Light background color */
+    }
+
+    /* Header and Navbar styles */
+    header {
+      background-color: #343a40; /* Dark background color */
+      color: #ffffff; /* Text color */
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .nav a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .nav a:hover {
+      background-color: #6c757d; /* Darker background color on hover */
+    }
+
+    .nav a.active {
+      background-color: #6c757d; /* Active link background color */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        StoreOps
+      </div>
+      <div>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/about-us" routerLinkActive="active">About</a>
+        <!-- Add more links as needed -->
+      </div>
+    </nav>
+  </header>
+
+  <!-- Your content here -->
+
+</body>
+</html>
